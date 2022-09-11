@@ -23,6 +23,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+const mongoDB = 'mongodb+srv://m001-student:m001-mongodb-basics@sandbox.adwa8.mongodb.net/WhatsApp_Payments?retryWrites=true&w=majority';
+mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
+
+const db = mongoose.connection;
+
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
