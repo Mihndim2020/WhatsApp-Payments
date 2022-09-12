@@ -4,8 +4,8 @@ const Schema = mongoose.Schema;
 
 const CustomerExperienceSchema = new Schema(
   {
-    client: { type: Schema.Types.ObjectId, ref: 'Client', required: true },
-    merchand: { type: Schema.Types.ObjectId, ref: 'Merchand', required: true },    
+    telephone_number: {type: String, min: 9, max: 13 },
+    merchand_code: { type: String},    
     rating: {type: Number, min: 1, max: 10 },
     comment: {type: String, required: true, minlength: 2, maxLength: 200},
   }
