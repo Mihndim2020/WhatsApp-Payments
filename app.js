@@ -7,6 +7,7 @@ const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
+const paymentsRouter = require('./routes/whatsAppPayments');
 
 const app = express();
 
@@ -22,6 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/whatsAppPayments', paymentsRouter);
 
 const mongoDB = 'mongodb+srv://m001-student:m001-mongodb-basics@sandbox.adwa8.mongodb.net/WhatsApp_Payments?retryWrites=true&w=majority';
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
