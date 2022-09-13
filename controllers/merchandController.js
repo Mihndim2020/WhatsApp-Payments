@@ -1,5 +1,7 @@
 const Merchand = require('../models/merchandModel');
 
+const async = require('async');
+
 exports.merchand_create_post = (req, res, next) => {
   const merchand = new Merchand({
     merchand_code: req.body.merchand_code,
@@ -18,30 +20,21 @@ exports.merchand_create_post = (req, res, next) => {
   });
   };
 
-  exports.find_merchand_code_get = (req, res, next) => {
-    async.parallel(
-      {
-        merchand_code(callback) {
-          Merchand.find({ merchand_code: req.params.merchand_code }).exec(callback);
-        },
-      },
-      (err, results) => {
-        if (err) {
-          return next(err);
-        }
-        if (results.merchand_code == null) {
-          // No results.
-          //res.redirect("/catalog/authors");
-          return false;
-        }
-        // Successful, so render.
-        //res.render("author_delete", {
-          //title: "Delete Author",
-          //author: results.author,
-         // author_books: results.authors_books,
-         
 
-         res.json(merchand_code)
-         
-        });
-      };
+  exports.find_merchand_code_get = (req, res, next) => {
+
+    console.log('testing the find method')
+
+    Merchand.find({ merchand_code: req.body.merchand_code }, function (err, results) {
+      if (err){
+        return next(err);
+      }
+      else if ( results == null) {
+        return false;
+      }
+      else{
+          res.json(results[0]);
+      }
+  });
+
+  };  

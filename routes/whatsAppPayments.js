@@ -13,6 +13,6 @@ router.post('/customerExperience/create', customerExperience_controller.customer
 
 
 router.post('/merchand/create', merchand_controller.merchand_create_post);
-router.get('/merchand/findMerchandCode', merchand_controller.find_merchand_code_get);
+router.post('/merchand/findMerchandCode', merchand_controller.find_merchand_code_get);
 
 module.exports = router;
