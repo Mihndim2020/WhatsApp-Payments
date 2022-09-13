@@ -17,3 +17,31 @@ exports.merchand_create_post = (req, res, next) => {
     res.json(merchand);
   });
   };
+
+  exports.find_merchand_code_get = (req, res, next) => {
+    async.parallel(
+      {
+        merchand_code(callback) {
+          Merchand.find({ merchand_code: req.params.merchand_code }).exec(callback);
+        },
+      },
+      (err, results) => {
+        if (err) {
+          return next(err);
+        }
+        if (results.merchand_code == null) {
+          // No results.
+          //res.redirect("/catalog/authors");
+          return false;
+        }
+        // Successful, so render.
+        //res.render("author_delete", {
+          //title: "Delete Author",
+          //author: results.author,
+         // author_books: results.authors_books,
+         
+
+         res.json(merchand_code)
+         
+        });
+      };
