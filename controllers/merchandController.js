@@ -29,11 +29,26 @@ exports.merchand_create_post = (req, res, next) => {
       if (err){
         return next(err);
       }
-      else if ( results == null) {
+      if (results[0] == undefined){
+        console.log('case of incorrect value');
+        console.log(results);
         return false;
+        
       }
       else{
-          res.json(results[0]);
+        console.log('case of correct value');
+        console.log(results[0]);
+        //const value = (results[0]);
+        //const response = JSON.stringify(value);
+        //const response = value;
+        //console.log(results[0]);
+        //return response;
+        //return results[0];
+        //return JSON.stringify(results[0]);
+        // The function returns only valid JSON
+        const response = results[0];
+        //res.json(results[0]);
+        res.json(response);
       }
   });
 
