@@ -12,13 +12,21 @@
   - Twilio Studio
   - Twilio Functions
   - Ngrok
+<<<<<<< HEAD
 
   ## Built With
 
   
 
   ## Built With
+=======
+  
+ ## Flow Diagram
+[Flowcharts.pdf](https://github.com/Mihndim2020/WhatsApp-Payments/files/9616125/Flowcharts.pdf)
+  
+>>>>>>> 569cd7da07fea3907685ce282463c3ae9fcd465c
 ## Getting Started
+
 To get a local copy up and running follow these simple example steps.
 ### Prerequisites
  - Recent version of Node JS installed
@@ -26,6 +34,7 @@ To get a local copy up and running follow these simple example steps.
 ### Usage
 - Clone the project into your local machine by entering the following command in the terminal: ` git clone git@github.com:Mihndim2020/WhatsApp-Payments.git`
 - cd into WhatsApp-Payments
+- Run git checkout feature/setup to switch to the feature branch
 - Run npm install to install dependencies
 - Run npm serverstart to start the server
 - Set up ngrok and update your Twilio functions that perform http request and you are good to go. 
