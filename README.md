@@ -12,7 +12,12 @@
   - Twilio Studio
   - Twilio Functions
   - Ngrok
+  
+ ## Flow Diagram
+[Flowcharts.pdf](https://github.com/Mihndim2020/WhatsApp-Payments/files/9616125/Flowcharts.pdf)
+  
 ## Getting Started
+
 To get a local copy up and running follow these simple example steps.
 ### Prerequisites
  - Recent version of Node JS installed
