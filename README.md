@@ -12,14 +12,11 @@
   - Twilio Studio
   - Twilio Functions
   - Ngrok
-<<<<<<< HEAD
 
-  ## Built With
-
+  ## Demo Presentation
   
+  [Demo video](https://www.loom.com/share/2dd4ad297c254133a0cb706c15963179)
 
-  ## Built With
-=======
   
  ## Flow Diagram
 [Flowcharts.pdf](https://github.com/Mihndim2020/WhatsApp-Payments/files/9616125/Flowcharts.pdf)
