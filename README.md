@@ -46,6 +46,7 @@ Give a ⭐️ if you like this project!
 
 - Twilio support
 - MDN
+- Freecodecamp
 - Diool team
 
 ## 📝 License
