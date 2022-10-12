@@ -17,6 +17,7 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
  - Recent version of Node JS installed
  - VS code or any IDE
+ - Twilio Account
 ### Usage
 - Clone the project into your local machine by entering the following command in the terminal: ` git clone git@github.com:Mihndim2020/WhatsApp-Payments.git`
 - cd into WhatsApp-Payments
