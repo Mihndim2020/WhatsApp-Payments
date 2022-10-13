@@ -5,6 +5,7 @@
 
 - Major languages
   - JavaScript
+  - Node JS
 - Frameworks
   - Express JS
 - Technologies used
