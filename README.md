@@ -17,6 +17,7 @@
 To get a local copy up and running follow these simple example steps.
 ### Prerequisites
  - Recent version of Node JS installed
+ - Access to WhatsApp Business API
  - VS code or any IDE
  - Twilio Account
 ### Usage
