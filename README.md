@@ -1,6 +1,6 @@
 # Bot for WhatsApp Payments
 
-> This project is build with Express a JavaScript framework and Twilio. This is an Server that interacts with WhatsApp payment Bot build on the Twilio platform, it receives http requests from functions written in Twilio, handles the requests by communicating with the MongoDB database and returning the required information, and the bot which is running on WhatsApp in updated.
+> This project is build with Express JS a JavaScript framework and Twilio. This is an Server that interacts with WhatsApp payment Bot build on the Twilio platform, it receives http requests from functions written in Twilio, handles the requests by communicating with the MongoDB database and returning the required information, and the bot which is running on WhatsApp in updated.
 ## Built With
 
 - Major languages
