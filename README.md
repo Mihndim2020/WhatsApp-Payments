@@ -51,6 +51,7 @@ Give a ⭐️ if you like this project!
 - MDN
 - Freecodecamp
 - Diool team
+- W3 Schools
 
 ## 📝 License
 
