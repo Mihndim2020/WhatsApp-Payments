@@ -52,6 +52,7 @@ Give a ⭐️ if you like this project!
 - Freecodecamp
 - Diool team
 - W3 Schools
+- Udemy
 
 ## 📝 License
 
