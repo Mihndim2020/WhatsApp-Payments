@@ -26,7 +26,7 @@ To get a local copy up and running follow these simple example steps.
 - Run git checkout feature/setup to switch to the feature branch
 - Run npm install to install dependencies
 - Run npm serverstart to start the server
-- Set up ngrok and update your Twilio functions that perform http request and you are good to go. 
+
 ## Author
 
 👤 **Mihndim Julius**
